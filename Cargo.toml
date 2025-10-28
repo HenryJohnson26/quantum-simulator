@@ -1,0 +1,30 @@
+[package]
+name = "quantum-sim"
+version = "0.1.0"
+edition = "2021"
+authors = ["Henry Johnson <you@example.com>"]
+description = "A from-scratch Rust quantum statevector simulator with plans for Clifford and Grover algorithm support"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/yourusername/quantum-sim"
+keywords = ["quantum", "simulator", "statevector", "rust"]
+categories = ["science", "simulation"]
+
+[lib]
+name = "quantum_sim"
+path = "src/lib.rs"
+
+[[bin]]
+name = "quantum-sim-bin"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.8.5"
+# Later you might add:
+# num-complex = "0.4"     # for Complex<f64> if you want to drop your own impl
+# rayon = "1.10"          # for parallelizing loops over amplitudes
+# wgpu = "0.20"           # for GPU compute kernels (optional)
+
+[dev-dependencies]
+# For testing utilities if needed in future:
+# approx = "0.5"         # for float comparisons
