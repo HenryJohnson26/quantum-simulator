@@ -4,6 +4,10 @@ pub struct RankDecompositionSimulator {
     pub coefficients: Vec<f64>,
 }
 
+pub struct CliffordTerm{
+    pub coeff: num_
+}
+
 impl RankDecompositionSimulator {
     pub fn approximate_nonclifford(&mut self, gate: &str) {
         // TODO: use a fixed stabilizer rank approximation for T or CCZ gates

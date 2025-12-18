@@ -33,7 +33,7 @@ impl fmt::Debug for Row {
 pub struct Tableau {
     num_qubits: usize,
     // Row-major: 2n rows, n+1 columns (X|Z|phase)
-    // Could store as Vec<Vec<bool>>, but you might later pack into bitmasks for speed.
+    // Could store as Vec<Vec<bool>>, but might later pack into bitmasks for speed.
     data: Vec<Row>,
 }
 
