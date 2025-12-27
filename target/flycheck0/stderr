@@ -1,5 +1,4 @@
-   0.093902300s  INFO prepare_target{force=false package_id=quantum-sim v0.1.0 (C:\Users\Henry\Documents\clifford_sim) target="compiler_tests"}: cargo::core::compiler::fingerprint: dependency on `quantum_sim` is newer than we are 13407643647.237853000s > 13404338415.592920400s "C:\\Users\\Henry\\Documents\\clifford_sim"
-   0.099859800s  INFO prepare_target{force=false package_id=quantum-sim v0.1.0 (C:\Users\Henry\Documents\clifford_sim) target="compiler_tests"}: cargo::core::compiler::fingerprint: fingerprint dirty for quantum-sim v0.1.0 (C:\Users\Henry\Documents\clifford_sim)/Check { test: true }/TargetInner { kind: "test", name: "compiler_tests", benched: false, ..: with_path("C:\\Users\\Henry\\Documents\\clifford_sim\\tests\\compiler_tests.rs", Edition2021) }
-   0.099886100s  INFO prepare_target{force=false package_id=quantum-sim v0.1.0 (C:\Users\Henry\Documents\clifford_sim) target="compiler_tests"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "quantum_sim", dep_mtime: FileTime { seconds: 13407643647, nanos: 237853000 }, max_mtime: FileTime { seconds: 13404338415, nanos: 592920400 } })
-    Checking quantum-sim v0.1.0 (C:\Users\Henry\Documents\clifford_sim)
-error: could not compile `quantum-sim` (test "compiler_tests") due to 1 previous error
+error: failed to parse lock file at: C:\Users\htj55\cs\Thesis\quantum-simulator\Cargo.lock
+
+Caused by:
+  lock file version `4` was found, but this version of Cargo does not understand this lock file, perhaps Cargo needs to be updated?
