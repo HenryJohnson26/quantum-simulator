@@ -20,6 +20,7 @@ path = "src/main.rs"
 
 [dependencies]
 rand = "0.8.5"
+bitvec = "1"
 # Later you might add:
 # num-complex = "0.4"     # for Complex<f64> if you want to drop your own impl
 # rayon = "1.10"          # for parallelizing loops over amplitudes
